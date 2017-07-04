@@ -1,8 +1,14 @@
 Read it first : https://github.com/emertxe-github/local_manifests
 
 # Build Kernel
- Install gcc-arm-linux-gnueabihf
+ # for cross-compiler there are two way to get them
+ # first way is below
+   Install gcc-arm-linux-gnueabihf 
+ # second way is use compiler which google provides for that do below steps
+   $ echo "export PATH=$PATH:<write absolute path of android source code dir>/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin" >> /.bashrc
+   
  $ cd kernel/rpi
+ 
  $ ARCH=arm scripts/kconfig/merge_config.sh arch/arm/configs/bcm2709_defconfig android/configs/android-base.cfg android/configs/android-recommended.cfg
  $ ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make zImage
  $ ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make dtbs
@@ -10,7 +16,7 @@ Read it first : https://github.com/emertxe-github/local_manifests
 # Install python mako module
   sudo apt-get install python-mako
 
-# Patch framework source :
+# Patch framework source (no need to add its already added given for refrence):
   https://github.com/android-rpi/device_brcm_rpi3/wiki#use-hal_pixel_format_bgra_8888
  
 # Build Android source

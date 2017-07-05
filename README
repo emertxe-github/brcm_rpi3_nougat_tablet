@@ -5,7 +5,7 @@ Read it first : https://github.com/emertxe-github/local_manifests
  # first way is below
    Install gcc-arm-linux-gnueabihf 
  # second way is use compiler which google provides for that do below steps
-   $ echo "export PATH=$PATH:<write absolute path of android source code dir>/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin" >> ~/.bashrc
+   $ echo "export PATH=$PATH:absolute_path_of_android _source_code_dir/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin" >> ~/.bashrc
    
  $ cd kernel/rpi
  

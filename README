@@ -17,9 +17,10 @@ Read it first : https://github.com/emertxe-github/local_manifests
   sudo apt-get install python-mako
 
 # Patch framework source :
- $ cd frameworks
  $ git clone https://github.com/emertxe-github/frameworks_patch_rpi3.git
- $ patch -p1 < frameworks_patch_rpi3/android_frameworks_rpi3.patch
+ $ cd frameworks
+ $ find . -path "*/.git*" -delete
+ $ patch -p1 < ../frameworks_patch_rpi3/android_frameworks_rpi3.patch
  # For more refrence
   https://github.com/android-rpi/device_brcm_rpi3/wiki#use-hal_pixel_format_bgra_8888
  

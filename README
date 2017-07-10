@@ -5,7 +5,7 @@ Read it first : https://github.com/emertxe-github/local_manifests
 
 # Patch framework source :
  $ git clone https://github.com/emertxe-github/frameworks_patch_rpi3.git
- $ bash bash frameworks_patch_rpi3/repo_apply_patch.sh
+ $ bash frameworks_patch_rpi3/repo_apply_patch.sh
  
 # Build Android source
  Continue build with http://source.android.com/source/building.html

@@ -1,8 +1,11 @@
-Read it first : https://github.com/emertxe-github/local_manifests
-
+# Download the android source code :
+     https://github.com/emertxe-github/local_manifests
+     
+# To start build follows bellow steps:
 # Install python mako module
-  sudo apt-get install python-mako
-# Make sure you are top level of project dir
+ $ sudo apt-get install python-mako
+  
+# Make sure you are top level of android source dir
 # Patch framework source : 
  $ git clone https://github.com/emertxe-github/frameworks_patch_rpi3.git
  $ bash frameworks_patch_rpi3/repo_apply_patch.sh

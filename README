@@ -2,8 +2,8 @@ Read it first : https://github.com/emertxe-github/local_manifests
 
 # Install python mako module
   sudo apt-get install python-mako
-
-# Patch framework source :
+# Make sure you are top level of project dir
+# Patch framework source : 
  $ git clone https://github.com/emertxe-github/frameworks_patch_rpi3.git
  $ bash frameworks_patch_rpi3/repo_apply_patch.sh
  
